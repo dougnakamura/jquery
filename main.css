@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+    padding: 16px 0;
+    display: flex;
+    border-bottom: 16px solid black;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form{
+    background-color: rgb(66, 66, 66);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+
+}
+
+form h2{
+    margin-bottom: 16px;
+    color: aliceblue;
+}
+
+input, button{
+    padding: 8px;
+}
+
+button{
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: aliceblue;
+    height: 35px;
+}
+
+#butao-cancelar{
+    background-color: red;
+}
