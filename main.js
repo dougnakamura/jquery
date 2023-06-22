@@ -8,16 +8,21 @@ $(document).ready(function() {
     })
 
     $('form').on('submit',function(e){
-        e.preventDafault();
+        e.preventDefault();
         const endercoDaNovaImagem = $('#endereco-imagem-nova').val();
-        const novoItem = $('<li></li>');
-        $(`<img src="${endercoDaNovaImagem}" />`).appendTo(novoItem);
+        
+        const novoItem = $('<li style= "display:none"></li>');
+        $(`<img src="${endercoDaNovaImagem}"/>`).appendTo(novoItem);
+        
         $(`
-            <div class="overlay-imagem-link">
-                <a href="${endercoDaNovaImagem}" target="_blanck" title="Ver imagem em tamanho real">
+    <div class="overlay-imagem-link">
+            <a href="${endercoDaNovaImagem}" target="_blanck" title="Ver imagem em tamanho real">
                     Ver imagem em tamanho real
-                    </a>
-            </div>
-        `).appendTo(novoItem)
+            </a>
+     </div>
+        `).appendTo(novoItem);
+            $(novoItem).appendTo('ul');
+            $(novoItem).fadeIn();
+            $('#endereco-imagem-nova').val('')
     })
 })

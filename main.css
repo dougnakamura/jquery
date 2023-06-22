@@ -55,7 +55,7 @@ button{
 
 ul{
     display: flex;
-    flex-wrap: 25%;
+    flex-wrap:wrap;
 }
 
 ul li{
@@ -70,8 +70,8 @@ ul li{
     
 }
 
-ul li a{
-    color: aliceblue;
+.overlay-imagem-link a{
+    color: rgb(255, 255, 255);
     text-decoration: none;
     
    
@@ -79,6 +79,7 @@ ul li a{
 
 ul li img{
     width: 100%;
+    height:100%;
 }
 
 .overlay-imagem-link{
