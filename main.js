@@ -9,17 +9,17 @@ $(document).ready(function() {
 
     $('form').on('submit',function(e){
         e.preventDefault();
-        const endercoDaNovaImagem = $('#endereco-imagem-nova').val();
+        const enderecoDaNovaImagem = $('#endereco-imagem-nova').val();
         
         const novoItem = $('<li style= "display:none"></li>');
-        $(`<img src="${endercoDaNovaImagem}"/>`).appendTo(novoItem);
+        $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
         
         $(`
     <div class="overlay-imagem-link">
-            <a href="${endercoDaNovaImagem}" target="_blanck" title="Ver imagem em tamanho real">
+            <a href="${enderecoDaNovaImagem}" target="_blank" title="Ver imagem em tamanho real">
                     Ver imagem em tamanho real
             </a>
-     </div>
+    </div>
         `).appendTo(novoItem);
             $(novoItem).appendTo('ul');
             $(novoItem).fadeIn();
